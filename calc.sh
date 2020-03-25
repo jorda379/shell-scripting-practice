@@ -11,4 +11,3 @@
 # When the operation is complete, redisplay the menu.
 
 echo "Hello, welcome to the calculator program."
-
