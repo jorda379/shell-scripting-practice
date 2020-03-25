@@ -14,15 +14,43 @@ echo "Exit"
 
 
 
+
 # Then, capture the user selection.
 read selection
 #TEMP 
 
 
 # If the selection matches a supported operation, execute the operation.
+case $selection in 
+"Add")
+echo "user has seleceted 'Add'"
+;;
+esac
+# If the selection matches a supported operation, execute the operation.
+case $selection in
+"Subtract")
+echo "user has seleceted 'Add'"
+;;
+esac
+# If the selection matches a supported operation, execute the operation.
+case $selection in
+"Exit")
+echo "user has seleceted 'Add'"
+;;
+esac
+
 
 
 # If the selection does not match a supported operation, display an error message.
 
 
-# When the operation is complete, redisplay the menu.
+
+#when the operation is complete, redisplay the menu.
+
+
+
+
+
+>s/Add/Subtract/g
+
+
