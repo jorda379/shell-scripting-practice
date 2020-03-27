@@ -20,21 +20,24 @@ read selection
 # If the selection matches a supported operation, execute the operation.
 case $selection in 
    "Add")
-    echo "User has selected 'Add'"
+    echo "Please provide the first number:"
+    read first_number
+    echo "Please provide the second number:"
+    read second_number
+    echo "The sum of $first_number and $second_number is:"
+    expr $first_number + $second_number
     ;;
     "Subtract") 
     echo "User has selected 'Subtract'"
     ;;
     "Exit")
     echo "User has selected 'Exit'"
-    ;;
-    esac
-    ;;
-    *)
+    ;;  
+  # If the selection does not match a supported operation, display an error message.
+  *)
    echo "Unsupported operation: $selection"
    echo "Please try again"
-
-# If the selection does not match a supported operation, display an error message.
+esac
 
 # When the operation is complete, redisplay the menu.
 
