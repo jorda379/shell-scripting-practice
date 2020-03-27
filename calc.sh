@@ -28,10 +28,15 @@ case $selection in
     expr $first_number + $second_number
     ;;
     "Subtract") 
-    echo "User has selected 'Subtract'"
+    echo "Please provide the first number:"
+    read first_number
+    echo "Please provide the second number:"
+    read second_number
+    echo "The difference of $first_number and $second_number is:"
+    expr $first_number -  $second_number
     ;;
     "Exit")
-    echo "User has selected 'Exit'"
+     echo "User has selected 'Exit'"
     ;;  
   # If the selection does not match a supported operation, display an error message.
   *)
