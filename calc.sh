@@ -1,3 +1,4 @@
+
 #! /usr/bin/env bash
 
 # When the program is first loaded, display a greeting to the user.
@@ -14,6 +15,10 @@ echo "Exit"
 
 
 # Then, capture the user selection.
+read selection
+
 # If the selection matches a supported operation, execute the operation.
+
 # If the selection does not match a supported operation, display an error message.
+
 # When the operation is complete, redisplay the menu.
