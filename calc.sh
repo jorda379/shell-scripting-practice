@@ -18,7 +18,27 @@ echo "Exit"
 read selection
 
 # If the selection matches a supported operation, execute the operation.
-
+case $selection in 
+   "Add")
+    echo "User has selected 'Add'"
+    ;;
+    "Subtract") 
+    echo "User has selected 'Subtract'"
+    ;;
+    "Exit")
+    echo "User has selected 'Exit'"
+    ;;
+    esac
+    ;;
+*)If the selection does not matx
 # If the selection does not match a supported operation, display an error message.
 
 # When the operation is complete, redisplay the menu.
+
+
+
+
+
+
+
+
