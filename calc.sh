@@ -30,10 +30,15 @@ case $selection in
     ;;
     esac
     ;;
-*)If the selection does not matx
+    *)
+   echo "Unsupported operation: $selection"
+   echo "Please try again"
+
 # If the selection does not match a supported operation, display an error message.
 
 # When the operation is complete, redisplay the menu.
+
+
 
 
 
